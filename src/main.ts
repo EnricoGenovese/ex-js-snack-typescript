@@ -60,3 +60,10 @@ type ProjectManager = Dipendente & {
   bugdetGestito?: string, // penso il dato arriverà ad esempio '10000€'
   stakeholderPrincipali: [...string[]];
 };
+
+type Team = {
+  nome: string,
+  progettoAttuale: string | null,
+  budget: number,
+  membri: [ProjectManager, Developer, ...Developer[]]
+}

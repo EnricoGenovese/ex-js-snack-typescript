@@ -44,5 +44,9 @@ type Dipendente = {
   cognome: string,
   annoNascita: number,
   sesso: 'f' | 'm',
-  
+  anniDiServizio: number[],
+  readonly emailAziendale: string,
+  contratto: 'indeterminato' | 'determinato' | 'freelance'
 };
+
+

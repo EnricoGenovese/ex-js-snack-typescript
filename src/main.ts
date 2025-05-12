@@ -36,3 +36,13 @@ switch (typeof data) { // i casi dello switch si basano sul tipo del dato ricevu
       console.log('Tipo non supportato');
 }
 
+
+// Snack 2
+
+type Dipendente = {
+  nome: string,
+  cognome: string,
+  annoNascita: number,
+  sesso: 'f' | 'm',
+  
+};

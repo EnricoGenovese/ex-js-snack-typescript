@@ -49,4 +49,14 @@ type Dipendente = {
   contratto: 'indeterminato' | 'determinato' | 'freelance'
 };
 
+type Developer = Dipendente & {
+  livelloEsperienza: 'Junior' | 'Mid' | 'Senior',
+  linguaggi?: string[],
+  certificazioni: [...string[]]
+};
 
+type ProjectManager = Dipendente & {
+  teamSize: number | null,
+  bugdetGestito?: string, // penso il dato arriverà ad esempio '10000€'
+  stakeholderPrincipali: [...string[]];
+};
